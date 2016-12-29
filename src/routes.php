@@ -19,6 +19,4 @@ Route::group(['prefix' => 'jwt', 'namespace' => 'Uicosp\JwtCasServer'], function
         Route::post('auth', 'JwtController@authenticate');
         Route::post('user', 'JwtController@getAuthenticatedUser');
     });
-
-    Route::any('test/{a}','WechatController@getSecret');
 });

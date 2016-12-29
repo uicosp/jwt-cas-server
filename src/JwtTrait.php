@@ -13,7 +13,7 @@ use Tymon\JWTAuth\JWTAuth;
 Trait JwtTrait
 {
     /**
-     * 根据已有的用户实例来生成 jwt_token 并重定向（用于第三方登陆，如微信）
+     * 根据已有的用户实例来生成 token 并重定向（用于第三方登陆，如微信）
      * @param Request $request
      * @param JWTAuth $jwt
      * @param $user
@@ -40,7 +40,7 @@ Trait JwtTrait
     protected function casRedirect(Request $request, $token)
     {
         $redirectUrl = urldecode($request->input('cas_redirect_url'));
-        // 为确保 jwt_token 的安全性必须使用 https 连接
-        return redirect($redirectUrl . "?jwt_token={$token}");
+        // 为确保 token 的安全性必须使用 https 连接
+        return redirect($redirectUrl . "?token={$token}");
     }
 }
