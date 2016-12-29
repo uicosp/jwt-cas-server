@@ -1,0 +1,22 @@
+{
+    "name": "uicosp/jwt-cas-server",
+    "description": "A simple CAS server based on jwt-auth for Laravel 5.3",
+    "keywords": ["laravel", "cas", "jwt"],
+    "license": "MIT",
+    "require": {
+        "tymon/jwt-auth": "^0.5.9"
+    },
+    "authors": [
+        {
+            "name": "Yudu",
+            "email": "uicosp@gmail.com",
+            "homepage": "http://yudu.tech",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Uicosp\\JwtCasServer\\": "src/"
+        }
+    }
+}
