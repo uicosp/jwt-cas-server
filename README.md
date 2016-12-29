@@ -31,5 +31,6 @@ Server 端提供两个基本路由
 
 另外，本项目依赖 [typmon/jwt-auth](https://github.com/tymondesigns/jwt-auth) 和 [laravel-wecaht](https://github.com/overtrue/laravel-wechat)，所以还需添加各自的 service provider：
 
-`Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class`
+`Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class`,
+
 `Overtrue\LaravelWechat\ServiceProvider::class`
