@@ -5,7 +5,7 @@
 - CAS Server （服务端，仅有一个）
 - CAS Clients （客户端，多个）
 
-用户只需在 Server 端登陆一次，获得 `jwt_token` 后便可用该令牌访问系统中的任意 Clients。
+用户只需在 Server 端登陆一次，获得 `token` 后便可用该令牌访问系统中的任意 Clients。
 
 **[注意] 此项目为该系统的服务端实现，客户端请移步 https://github.com/uicosp/jwt-cas-client**
 
