@@ -30,7 +30,7 @@ class JwtController extends Controller
 
     public function showLoginForm(Request $request)
     {
-        return view('JwtCasServer::login', $request->only('cas_back_url'));
+        return view('JwtCasServer::login', $request->only('cas_redirect_url'));
     }
 
     public function login(Request $request)

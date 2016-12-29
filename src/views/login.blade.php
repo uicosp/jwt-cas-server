@@ -1,6 +1,4 @@
-@extends('layouts.app')
 
-@section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -11,7 +9,7 @@
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/jwt/login') }}">
                         {{ csrf_field() }}
                         {{--CAS客户端重定向URL--}}
-                        <input type="hidden" name="cas_back_url" value="{{ $cas_back_url }}">
+                        <input type="hidden" name="cas_redirect_url" value="{{ $cas_redirect_url }}">
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">用户名</label>
 
@@ -57,4 +55,3 @@
         </div>
     </div>
 </div>
-@endsection
